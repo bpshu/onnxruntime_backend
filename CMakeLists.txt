@@ -173,21 +173,18 @@ include(FetchContent)
 
 FetchContent_Declare(
   repo-common
-  GIT_REPOSITORY https://github.com/triton-inference-server/common.git
-  GIT_TAG ${TRITON_COMMON_REPO_TAG}
-  GIT_SHALLOW ON
+  URL https://duiwai-deploy.oss-cn-hangzhou.aliyuncs.com/asr-service/third-party/triton_common_r23.02.tar.gz
+  URL_HASH SHA256=11f9f70a349cdb13cd9a1bf91b29a2645e0a95c0f2b5cfa188c60e1c2739a96b
 )
 FetchContent_Declare(
   repo-core
-  GIT_REPOSITORY https://github.com/triton-inference-server/core.git
-  GIT_TAG ${TRITON_CORE_REPO_TAG}
-  GIT_SHALLOW ON
+  URL https://duiwai-deploy.oss-cn-hangzhou.aliyuncs.com/asr-service/third-party/triton_core_r23.02.tar.gz
+  URL_HASH SHA256=9fe0174cdb3fc6e54ddef5966dd4153e332328e8097080c3b9b7c45f07e72749
 )
 FetchContent_Declare(
   repo-backend
-  GIT_REPOSITORY https://github.com/triton-inference-server/backend.git
-  GIT_TAG ${TRITON_BACKEND_REPO_TAG}
-  GIT_SHALLOW ON
+  URL https://duiwai-deploy.oss-cn-hangzhou.aliyuncs.com/asr-service/third-party/triton_backend.r23.02.tar.gz
+  URL_HASH SHA256=2a9e044b00f98b0d612983362e6c238125dc12f306ef7f7a669ff0790703357d
 )
 FetchContent_MakeAvailable(repo-common repo-core repo-backend)
 
